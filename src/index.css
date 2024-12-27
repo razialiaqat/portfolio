@@ -1,0 +1,522 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+font-family: "Poppins", sans-serif;
+}
+body{
+
+  background-color:rgb(20, 20, 20) ;
+  color: white;
+  overflow: hidden;
+  overflow: scroll;
+}
+/*header section*/
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navList.open {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.navLink:hover {
+  color: yellow;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-bottom:  3px solid yellow;
+}
+
+.navList.open .navLink {
+  color: #333;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+/* Home section
+/* General Styles */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: rgb(50, 50, 50);
+  position: relative;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to stack for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introContent {
+  max-width: 50%;
+}
+
+.hello {
+  font-size: 2rem;
+  color: white;
+}
+
+.introText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.4;
+  color:white;
+}
+
+.introName {
+  color: yellow; /* Highlight color */
+}
+
+.introPara {
+  font-size: 1rem;
+  color: white;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: white; /* Default button color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background-color: black; /* Button hover color */
+  color: white; /* Text color on hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Social Link Hover Effect */
+.link {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btnimg {
+  width: 20px;
+  height: 20px;
+}
+.bg {
+  max-width: 45%;
+  height: auto; /* Ensures the height adjusts automatically */
+  max-height: 400px; /* Increase this value as needed */
+  margin-top: 20px;
+  object-fit: cover; /* Ensures the image fills the space nicely */
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  #home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introContent {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .bg {
+     
+ 
+     max-width: 80%;
+    margin-top: 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hello {
+    font-size: 1.5rem;
+   
+  }
+
+  .introText {
+    font-size: 2rem;
+  }
+
+  .introPara {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello {
+    font-size: 1.2rem;
+   
+  }
+
+  .introText {
+    font-size: 1.5rem;
+  }
+
+  .introPara {
+    font-size: 0.8rem;
+  }
+
+  .bg {
+    max-width: 90%;
+  }
+}
+
+/*skill section*/
+#about{
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.skillTitle{
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+
+}
+.skillDesc{
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 51rem;
+  padding: 0 2rem;
+}
+.skillBars{
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align:left ;
+}
+.skillBar{
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem;
+  background: rgb(50, 50, 50);
+}
+.skillBarimg{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+.skillBarText>p{
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 720px){
+  .skillBarText>p{
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 480px){
+  .skillBarText>p{
+    font-size: 3vw;
+  }
+  .skillBarimg{
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  .skillBarText>h2{
+    font-size: 5vw;
+  }
+}
+/*experience section*/
+
+#projects {
+  padding: 40px 20px;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgb(50, 50, 50);
+}
+
+/* Title and Description */
+.experiencetitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color:white;
+  font-weight: bold;
+}
+
+.experienceDesc {
+  
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 51rem;
+  padding: 0 2rem;
+  margin: 10px;
+  
+  
+}
+
+/* Grid Layout for Cards */
+.experienceImg {
+  
+ 
+   display: grid;
+   gap: 10px;
+  grid-template-columns: repeat(3, 1fr); 
+  padding: 10px;
+  justify-items: center; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .experienceImg {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .experienceImg {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
+}
+
+/* Card Styling */
+.card {
+  margin-top: 10px;
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.card-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.experiencebtn {
+  background: white; /* Default background color */
+  margin: 3rem 0;
+  padding: 0.75rem 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  /* Default background color */
+  color: black;      /* Default text color */
+  font-size: 1rem;
+  font-weight: bolder; /* Optional for more emphasis */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.experiencebtn:hover {
+  background: black; /* Hover background color */
+  color: white;      /* Hover text color */
+}
+
+
+
+/* contact section*/
+.contact-section {
+  padding: 50px 20px;
+  background-color:#333;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background:#333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* Title and Description */
+.contactPageTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+
+}
+.contactDesc{
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 200;
+
+}
+.contactForm{
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+.name, .email, .msg{
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin :0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40,40, 40);
+}
+/* Submit Button Styling */
+.submitBtn {
+  background: white; /* Default background color */
+  color: black;      /* Default text color */
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+  font-weight: bolder; /* Optional for more emphasis */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: black; /* Hover background color */
+  color: white;      /* Hover text color */
+}
+
+
+.links{
+  display: flex;
+  flex-direction: wrap;
+}
+.link{
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+  margin: 0.0.75rem;
+  
+} 
+
+
+ /*Social Links */
+.links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.link {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.2);
+}
+
+.footer{
+  width: 100vw;
+  height: 4rem;
+  background: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+ 
+}
