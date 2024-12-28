@@ -488,12 +488,12 @@ body{
 
 
  /*Social Links */
-.links {
+/* .links {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 15px;
-}
+} */
 
 .link {
   width: 40px;
