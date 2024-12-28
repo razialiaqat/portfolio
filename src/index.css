@@ -147,7 +147,7 @@ body{
 }
 
 .btn {
-  background-color: white; /* Default button color */
+  background-color: white; 
   color: black;
   border: none;
   border-radius: 5px;
@@ -161,8 +161,8 @@ body{
 }
 
 .btn:hover {
-  background-color: black; /* Button hover color */
-  color: white; /* Text color on hover */
+  background-color: black; 
+  color: white; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -180,10 +180,10 @@ body{
 }
 .bg {
   max-width: 45%;
-  height: auto; /* Ensures the height adjusts automatically */
-  max-height: 400px; /* Increase this value as needed */
+  height: auto; 
+  max-height: 400px; 
   margin-top: 20px;
-  object-fit: cover; /* Ensures the image fills the space nicely */
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -314,9 +314,9 @@ body{
 /*experience section*/
 
 #projects {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
-  padding: 1.5rem;
+
   background: rgb(50, 50, 50);
 }
 
@@ -353,13 +353,13 @@ body{
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .experienceImg {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .experienceImg {
-    grid-template-columns: 1fr; /* 1 card per row on mobile */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -388,26 +388,23 @@ body{
   border-radius: 5px;
 }
 .experiencebtn {
-  background: white; /* Default background color */
-  margin: 3rem 0;
+  background: white; 
+ margin:3rem 0;
   padding: 0.75rem 3.5rem;
   border: none;
   border-radius: 0.5rem;
   /* Default background color */
-  color: black;      /* Default text color */
+  color: black;      
   font-size: 1rem;
-  font-weight: bolder; /* Optional for more emphasis */
+  font-weight: bolder; 
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .experiencebtn:hover {
-  background: black; /* Hover background color */
-  color: white;      /* Hover text color */
+  background: black;
+  color: white;      
 }
-
-
-
 /* contact section*/
 .contact-section {
   padding: 50px 20px;
@@ -428,8 +425,7 @@ body{
 .contactPageTitle {
   font-size: 3rem;
   font-weight: 600;
-  padding-top: 3rem;
-  margin-bottom: 1.5rem;
+  
 
 }
 .contactDesc{
@@ -461,20 +457,20 @@ body{
 }
 /* Submit Button Styling */
 .submitBtn {
-  background: white; /* Default background color */
-  color: black;      /* Default text color */
+  background: white;
+  color: black;    
   border: none;
   border-radius: 0.5rem;
   margin: 2rem;
   padding: 0.75rem 3.5rem;
-  font-weight: bolder; /* Optional for more emphasis */
+  font-weight: bolder;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .submitBtn:hover {
-  background: black; /* Hover background color */
-  color: white;      /* Hover text color */
+  background: black;
+  color: white;    
 }
 
 
