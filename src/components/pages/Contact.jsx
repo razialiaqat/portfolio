@@ -1,8 +1,5 @@
 import React from 'react'
-import FacebookIcon from '../../assets/facebook.png';
-import TwitterIcon from '../../assets/twitter.png';
-import YoutubeIcon from '../../assets/youtube.png';
-import InstagramIcon from '../../assets/instagram.png';
+
 const Contact = ()=> {
 return (
     <section className='contact-section'>
